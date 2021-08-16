@@ -33,9 +33,9 @@ RUBY
 run 'rm Gemfile'
 file 'Gemfile', gemfile_content
 
-run 'rm .ruby-version'
+# run 'rm .ruby-version'
 run 'rbenv local 2.7.4'
-file '.ruby-version', '2.7.4', force: true
+# file '.ruby-version', '2.7.4', force: true
 
 run 'rbenv local'
 
