@@ -29,11 +29,13 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 RUBY
+
 run 'rm Gemfile'
 file 'Gemfile', gemfile_content
 
 run 'rm .ruby-version'
-file '.ruby-version', '2.7.4'
+run 'rbenv local 2.7.4'
+file '.ruby-version', '2.7.4', force: true
 
 run 'rbenv local'
 
@@ -101,7 +103,7 @@ gsub_file('config/environments/production.rb', /config.assets.js_compressor.*/, 
 environment 'config.action_mailer.default_url_options = { host: "http://localhost:3000" }', env: 'development'
 environment 'config.action_mailer.default_url_options = { host: "http://TODO_PUT_YOUR_DOMAIN_HERE" }', env: 'production'
 
-" - Wendy"
+" - West"
 
 after_bundle do
 
