@@ -35,7 +35,8 @@ file 'Procfile', <<-YAML
 web: bundle exec puma -C config/puma.rb
 YAML
 
-readme_content = <<-MARKDOWN
-# ReadMe
-This is how it starts.
+readme_content = <<~MARKDOWN
+  # ReadMe
+  This is how it starts.
+MARKDOWN
 file 'README.md', readme_content, force: true
