@@ -32,6 +32,7 @@ RUBY
 run 'rm Gemfile'
 file 'Gemfile', gemfile_content
 
+run 'rm .ruby-version'
 file '.ruby-version', '2.5.3'
 
 run 'rbenv local'
