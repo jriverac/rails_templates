@@ -31,8 +31,8 @@ RUBY
 run 'rm Gemfile'
 file 'Gemfile', gemfile_content
 
-file 'Procfile', <<-YAML
-web: bundle exec puma -C config/puma.rb
+file 'Procfile', <<~YAML
+  web: bundle exec puma -C config/puma.rb
 YAML
 
 readme_content = <<~MARKDOWN
