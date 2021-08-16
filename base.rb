@@ -34,6 +34,8 @@ file 'Gemfile', gemfile_content
 
 file '.ruby-version', '2.5.3'
 
+run 'rbenv local'
+
 file 'Procfile', <<-YAML
 web: bundle exec puma -C config/puma.rb
 YAML
