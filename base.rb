@@ -2,12 +2,12 @@ run 'pgrep spring | xargs kill -9'
 
 gemfile_content = <<-RUBY
 source 'https://rubygems.org'
-ruby "2.7.1"
+ruby "2.7.4"
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', "6.0.0"
+gem 'rails', "~> 6.1.3.1"
 gem 'redis', '~> 3.3', '>= 3.3.1'
 gem 'devise'
 gem 'autoprefixer-rails'
