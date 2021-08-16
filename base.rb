@@ -52,11 +52,11 @@ end'
 
 gsub_file('config/environments/development.rb', /config.assets.debug.*/, 'config.assets.debug = false')
 
-run 'rm -rf app/assets/stylesheets'
-run 'svn export https://github.com/davidmetta/rails_templates_assets/trunk/stylesheets'
-run 'mv stylesheets app/assets'
+# run 'rm -rf app/assets/stylesheets'
+# run 'svn export https://github.com/davidmetta/rails_templates_assets/trunk/stylesheets'
+# run 'mv stylesheets app/assets'
 
-run 'rm app/assets/javascripts/application.js'
+# run 'rm app/assets/javascripts/application.js'
 file 'app/assets/javascripts/application.js', <<-JS
 //= require rails-ujs
 //= require jquery
