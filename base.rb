@@ -2,7 +2,7 @@ run 'pgrep spring | xargs kill -9'
 
 gemfile_content = <<-RUBY
 source 'https://rubygems.org'
-ruby "2.5.3"
+ruby "2.7.1"
 gem 'bootsnap', require: false
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
